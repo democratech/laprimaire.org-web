@@ -22,7 +22,9 @@
             </a>
           </li>
           <li>
-            <a class="navbar-brand tg_logo_wrap" href="https://telegram.org" target="_blank"><i class="icon icon-tg-logo"></i><i class="icon icon-tg-title"></i></a>
+            <a class="navbar-brand tg_logo_wrap" href="https://laprimaire.org" target="_blank">
+		<img src="/app/img/laprimaire/logo-tr-116x35.png" width="116px" height="36px">
+	    </a>
           </li>
         </ul>
       </div>
@@ -32,7 +34,7 @@
 </div>
 
 
-<div class="login_page_wrap" my-custom-background="#e7ebf0">
+<div class="login_page_wrap">
   <div class="login_page">
     <div class="login_form_wrap" my-vertical-position="0.2" padding="true">
       <div class="error" ng-if="error.message" ng-bind="error.message"></div>
@@ -139,10 +141,13 @@
       <div ng-switch-when="true" class="login_footer_about_wrap" my-scroll-to-on="$init">
         <h3 my-i18n="login_about_title"></h3>
         <p my-i18n="login_about_desc1_md"></p>
+          <my-i18n-param name="laprimaire-link">
+            <a href="https://laprimaire.org" target="_blank">{0}</a>
+          </my-i18n-param>
         <p my-i18n="login_about_desc2_md"></p>
         <p my-i18n="login_about_desc3_md">
           <my-i18n-param name="source-link">
-            <a href="https://github.com/zhukov/webogram" target="_blank">{0}</a>
+            <a href="https://github.com/democratech/laprimaire.org-web" target="_blank">{0}</a>
           </my-i18n-param>
         </p>
       </div>

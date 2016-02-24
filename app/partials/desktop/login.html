@@ -128,11 +128,15 @@
     <div ng-switch="about.shown">
       <div ng-switch-when="true" class="login_footer_about_wrap" my-scroll-to-on="$init">
         <h3 my-i18n="login_about_title"></h3>
-        <p my-i18n="login_about_desc1_md"></p>
+        <p my-i18n="login_about_desc1_md">
+          <my-i18n-param name="laprimaire-link">
+            <a href="https://laprimaire.org" target="_blank">{0}</a>
+          </my-i18n-param>
+	</p>
         <p my-i18n="login_about_desc2_md"></p>
         <p my-i18n="login_about_desc3_md">
           <my-i18n-param name="source-link">
-            <a href="https://github.com/zhukov/webogram" target="_blank">{0}</a>
+            <a href="https://github.com/democratech/laprimaire.org-web" target="_blank">{0}</a>
           </my-i18n-param>
         </p>
       </div>
