@@ -17,12 +17,11 @@ Config = window.Config || {};
   You can get your own api_id, api_hash at https://my.telegram.org, see manual at https://core.telegram.org/api/obtaining_api_id.
 
 */
-
 Config.App = {
-  id: 2496,
-  hash: '8da85b0d5bfe62527e5b244c209159c3',
+  id: 012345,
+  hash: 'MYHASH',
   version: '0.5.3',
-  domains: ['web.telegram.org', 'zhukov.github.io']
+  domains: ['web.laprimaire.org']
 };
 
 Config.Modes = {
@@ -55,7 +54,7 @@ Config.Navigator = {
 // Touch detect: https://github.com/Modernizr/Modernizr/blob/master/feature-detects/touchevents.js
 
 Config.I18n = {
-  locale: 'en-us',
+  locale: 'fr-fr',
   supported: [
     "en-us"
     ,"es-es"
@@ -63,7 +62,7 @@ Config.I18n = {
     ,"it-it"
     ,"nl-nl"
     ,"pt-br"
-    // ,"ru-ru"
+    ,"fr-fr"
   ], // To be copied to package.json
   languages: {
     'en-us': 'English',
@@ -72,7 +71,8 @@ Config.I18n = {
     'it-it': 'Italiano',
     'ru-ru': 'Русский',
     'nl-nl': 'Nederlands',
-    'pt-br': 'Português (Brazil)'
+    'pt-br': 'Português (Brazil)',
+    'fr-fr': 'Français',
   },
   aliases: {
     'en': 'en-us',
@@ -80,7 +80,8 @@ Config.I18n = {
     'es': 'es-es',
     'it': 'it-it',
     'ru': 'ru-ru',
-    'nl': 'nl-nl'
+    'nl': 'nl-nl',
+    'fr': 'fr-fr'
   },
   messages: {},
   fallback_messages: {}
