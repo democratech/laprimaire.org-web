@@ -17,14 +17,6 @@ MTProto data can be carried over HTTP (SSL is also supported), so this project i
 
 That said, I'm using this app myself and I'd like to share its sources, so anyone can contribute to the development. Any help is welcome!
 
-### Interface
-
-Here are some screenshots of the interface:
-
-![Sample screenshot 1](/app/img/screenshot1.png)
-![Mobile screenshot 2](/app/img/screenshot2.png)
-![Mobile screenshot 3](/app/img/screenshot3.png)
-
 ### Unsupported at the moment
 
 * Secret chats
