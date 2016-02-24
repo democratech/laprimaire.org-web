@@ -1,12 +1,12 @@
 {
-  "name": "Telegram",
-  "description": "Telegram Web App.\nMore info & source code here: https://github.com/zhukov/webogram",
+  "name": "LaPrimaire.org",
+  "description": "LaPrimaire.org Web App.\nThis app is an adaptation of Webogram, the web client of Telegram.\nMore info & source code here: https://github.com/democratech/laprimaire-web",
   "version": "0.5.3",
   "main": "app/index.html",
   "single-instance": true,
   "dom_storage_quota": 40,
   "window": {
-    "title": "Telegram",
+    "title": "LaPrimaire.org",
     "icon": "app/img/icons/icon128.png",
     "toolbar": false,
     "frame": true,
@@ -23,12 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhukov/webogram.git"
+    "url": "https://github.com/democratech/laprimaire-web.git"
   },
   "author": "zhukov",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/zhukov/webogram/issues"
+    "url": "https://github.com/democratech/laprimaire-web/issues"
   },
   "locales": [
     "en-us",
@@ -37,9 +37,10 @@
     "it-it",
     "ru-ru",
     "nl-nl",
-    "pt-br"
+    "pt-br",
+    "fr-fr"
   ],
-  "homepage": "http://zhukov.github.io/webogram",
+  "homepage": "https://laprimaire.org",
   "devDependencies": {
     "del": "^1.2.0",
     "event-stream": "^3.1.0",

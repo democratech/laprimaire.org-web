@@ -4,11 +4,11 @@ You can help this project by reporting problems, suggestions, localizing it or c
 
 ### Report a problem or suggestion
 
-Go to our [issue tracker](https://github.com/zhukov/webogram/issues) and check if your problem/suggestion is already reported. If not, create a new issue with a descriptive title and detail your suggestion or steps to reproduce the problem.
+Go to our [issue tracker](https://github.com/democratech/laprimaire.org-web/issues) and check if your problem/suggestion is already reported. If not, create a new issue with a descriptive title and detail your suggestion or steps to reproduce the problem.
 
 ### Localization
 
-If you don't see your native language available for Webogram and you can help with translation, please consult the [Telegram Translations Manual](https://core.telegram.org/translating_telegram).
+If you don't see your native language available for LaPrimaire.org web app and you can help with translation, please consult the [Telegram Translations Manual](https://core.telegram.org/translating_telegram).
 
 To test your translation live, use [Localization guide](/app/js/locales/README.md).
 
@@ -19,12 +19,12 @@ If you know how to code, we welcome you to send fixes and new features, but in o
 * Fork this repo using the button at the top.
 * Clone your forked repo locally.
 
-``$ git clone git@github.com:yourname/webogram.git``
+``$ git clone git@github.com:yourname/laprimaire.org-web.git``
 
-* Don't modify or work on the master branch, we'll use it to always be in sync with webogram upstream.
+* Don't modify or work on the master branch, we'll use it to always be in sync with laprimaire.org-web upstream.
 
 ```
-$ git remote add upstream git@github.com:zhukov/webogram.git
+$ git remote add upstream git@github.com:democratech/laprimaire.org-web.git
 $ git fetch upstream
 ```
 
@@ -41,7 +41,7 @@ $ git commit -m "Improved contact list. Fix #99"
 $ git push origin improve-contacts-99
 ```
 
-* Do a new pull request from your "improve-contacts-99" branch to webogram "master".
+* Do a new pull request from your "improve-contacts-99" branch to laprimaire.org-web "master".
 
 #### How to implement changes suggested on a pull request
 
