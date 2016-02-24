@@ -14,7 +14,7 @@ angular.module('myApp.controllers', ['myApp.i18n'])
   .controller('AppWelcomeController', function($scope, $location, MtpApiManager, ErrorService, ChangelogNotifyService, LayoutSwitchService) {
     MtpApiManager.getUserID().then(function (id) {
       if (id) {
-        $location.url('/im');
+        $location.url('/im?p=@LaPrimaireBot');
         return;
       }
       if (location.protocol == 'http:' &&
@@ -37,7 +37,7 @@ angular.module('myApp.controllers', ['myApp.i18n'])
 
     MtpApiManager.getUserID().then(function (id) {
       if (id) {
-        $location.url('/im');
+        $location.url('/im?p=@LaPrimaireBot');
         return;
       }
       if (location.protocol == 'http:' &&
@@ -167,7 +167,7 @@ angular.module('myApp.controllers', ['myApp.i18n'])
       });
       $timeout.cancel(callTimeout);
 
-      $location.url('/im');
+      $location.url('/im?p=@LaPrimaireBot');
     };
 
     function callCheck () {
