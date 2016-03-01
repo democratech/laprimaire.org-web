@@ -26,9 +26,9 @@ gulp.task('templates', function() {
 gulp.task('usemin', ['templates', 'enable-production'], function() {
   return gulp.src(['app/index.html', 'app/badbrowser.html'])
     .pipe($.usemin({
-      html: [$.minifyHtml({empty: true})],
-      js: ['concat', $.ngAnnotate(), $.uglify({outSourceMap: false})],
-      css: ['concat', $.minifyCss({compatibility: true, keepBreaks: true})]
+      //html: [$.minifyHtml({empty: true})],
+      js: ['concat', $.ngAnnotate(), $.uglify({outSourceMap: false})]
+      //css: ['concat', $.minifyCss({compatibility: true, keepBreaks: true})]
     }))
     .pipe(gulp.dest('dist'));
 });

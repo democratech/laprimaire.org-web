@@ -1,6 +1,7 @@
 .DS_Store
 .idea
 *.sublime-workspace
+*.local.js
 
 # Node.js package manager
 node_modules
