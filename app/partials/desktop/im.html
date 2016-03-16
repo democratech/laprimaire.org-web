@@ -177,11 +177,6 @@
 
                 <div class="im_send_form_wrap clearfix" ng-controller="AppImSendController" ng-class="{im_send_reply_form_wrap: draftMessage.replyToMessage != null}">
 
-                  <a style="display:none;" class="pull-right im_panel_peer_photo" my-peer-photolink="historyPeer.id" img-class="im_panel_peer_photo" watch="true" ng-show="!draftMessage.isBroadcast">
-                    <i class="icon im_panel_peer_online" ng-show="historyPeer.id > 0 &amp;&amp; historyPeer.data.status._ == 'userStatusOnline'"></i>
-                  </a>
-                  <a style="display:none;" class="pull-left im_panel_own_photo" my-peer-photolink="draftMessage.isBroadcast ? historyPeer.id : ownID" img-class="im_panel_own_photo" watch="true" ng-click="openSettings()" no-open="true"></a>
-
                   <form my-send-form draft-message="draftMessage" mentions="mentions" commands="commands" class="im_send_form" ng-class="{im_send_form_empty: !draftMessage.text.length, composer_progress_enabled: draftMessage.inlineProgress}">
 
                     <div class="im_send_form_inline_results" my-inline-results="inlineResults"></div>
@@ -206,22 +201,6 @@
 
                       <div class="im_send_dropbox_wrap" my-i18n="im_photos_drop_text"></div>
                       <textarea ng-model="draftMessage.text" class="form-control im_message_field no_outline" dir="auto" ng-trim="false"></textarea>
-                    </div>
-
-                    <div class="im_send_buttons_wrap clearfix" style="display:none;">
-                      <button type="submit" class="btn btn-md im_submit nocopy" my-i18n="im_submit_message"></button>
-
-                      <div class="im_attach pull-left">
-                        <input type="file" class="im_attach_input" size="28" multiple="multiple" title="{{'im_attach_file_title' | i18n}}" />
-                        <i class="icon icon-paperclip"></i>
-                      </div>
-
-                      <div class="im_media_attach pull-left">
-                        <input type="file" class="im_media_attach_input" size="28" multiple="multiple" accept="image/*, video/*, audio/*" title="{{'im_media_attach_title' | i18n}}"/>
-                        <i class="icon icon-camera"></i>
-                      </div>
-
-                      <div class="composer_emoji_panel"></div>
                     </div>
 
                     <div class="im_send_keyboard_wrap" ng-if="historyState.replyKeyboard._ == 'replyKeyboardMarkup'" ng-show="!historyState.replyKeyboard.pFlags.hidden">
